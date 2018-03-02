@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
+import {ClinicalCommonModule} from './clinical-common/clinical-common.module';
+
 
 
 @NgModule({
@@ -12,7 +14,8 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ClinicalCommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
