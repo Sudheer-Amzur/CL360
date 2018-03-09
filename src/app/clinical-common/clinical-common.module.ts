@@ -9,15 +9,19 @@ import { FooterComponent } from './footer/footer.component';
 import { LeftMenuComponent } from './left-menu/left-menu.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import {ClinicalPrimeModule} from '../clinical-prime/clinical-prime.module';
-
+import { LoginComponent } from './login/login.component';
+import { LoginService } from './login/login.service';
+ 
 @NgModule({
   imports: [
     CommonModule,
     BrowserAnimationsModule,
     ClinicalCommonRoutingModule,
-    ClinicalPrimeModule    
+    ClinicalPrimeModule
+    
   ],
-  exports:[DashboardComponent],
-  declarations: [HeaderComponent, FooterComponent, LeftMenuComponent, DashboardComponent]
+  exports:[DashboardComponent,LoginComponent],
+  declarations: [HeaderComponent, FooterComponent, LeftMenuComponent, DashboardComponent, LoginComponent],
+  providers:[LoginService]
 })
 export class ClinicalCommonModule { }

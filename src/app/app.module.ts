@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,10 +11,11 @@ import {ClinicalPrimeModule} from './clinical-prime/clinical-prime.module';
     AppComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
+    BrowserModule,    
+    HttpClientModule,
     ClinicalCommonModule,
-    ClinicalPrimeModule    
+    ClinicalPrimeModule,
+    AppRoutingModule    
   ],
   providers: [],
   bootstrap: [AppComponent]
